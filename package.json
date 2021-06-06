@@ -1,0 +1,14 @@
+{
+  "name": "zwavejs-prom",
+  "version": "0.0.1",
+  "description": "zwavejs2mqtt plugin for prometheus metrics and simple alerting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Viktor Kuzmin",
+  "license": "ISC",
+  "dependencies": {
+    "prom-client": "^13.1.0"
+  }
+}
