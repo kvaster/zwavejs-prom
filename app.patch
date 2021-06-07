@@ -1,0 +1,23 @@
+diff --git a/app.js b/app.js
+index b782a9b..b01e397 100644
+--- a/app.js
++++ b/app.js
+@@ -261,7 +261,7 @@ function startGateway (settings) {
+         const instance = require(plugin)({
+           zwave,
+           mqtt,
+-          app,
++          app: pluginApp,
+           logger: loggers.module(pluginName)
+         })
+         instance.name = pluginName
+@@ -304,6 +304,9 @@ function setupInterceptor () {
+ logger.info(`Version: ${utils.getVersion()}`)
+ logger.info('Application path:' + utils.getPath(true))
+ 
++const pluginApp = express()
++app.use(pluginApp)
++
+ // view engine setup
+ app.set('views', utils.joinPath(false, 'views'))
+ app.set('view engine', 'ejs')

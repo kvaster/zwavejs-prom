@@ -1,4 +1,5 @@
 // Simple zwavejs2mqtt plugin for prometheus metrics
+
 const promCli = require('prom-client')
 const PromCliRegistry = promCli.Registry
 
