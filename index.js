@@ -49,7 +49,7 @@ function zwaveLabel(label) {
         .toLowerCase()
         .replaceAll(' ', '_')
         .replaceAll('₂', '2') // special case for co2
-        .replaceAll(/[,.!?()]/ig, '')
+        .replaceAll(/[^a-zA-Z0-9_]/ig, '') // Remove all non-allowed letters (see https://prometheus.io/docs/concepts/data_model/#metric-names-and-labels)
 }
 
 class ZwavejsProm {
