@@ -1,6 +1,6 @@
 {
-  "name": "zwavejs-prom",
-  "version": "0.0.1",
+  "name": "@zwave-js-ui/plugin-prometheus",
+  "version": "0.0.2",
   "description": "zwavejs2mqtt plugin for prometheus metrics",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,6 @@
   },
   "license": "ISC",
   "dependencies": {
-    "prom-client": "^13.1.0"
+    "prom-client": "^14.1.0"
   }
 }
