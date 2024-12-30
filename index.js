@@ -2,6 +2,7 @@
 
 const promCli = require('prom-client')
 const PromCliRegistry = promCli.Registry
+const register = promCli.register;
 
 const labelNames = [
     'nodeId',
@@ -77,6 +78,7 @@ class ZwavejsProm {
     }
 
     async sendMetrics(req, res) {
+        res.set('Content-Type', register.contentType);
         this.registry.metrics().then((m) => res.send(m))
     }
 
