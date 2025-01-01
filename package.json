@@ -1,6 +1,6 @@
 {
   "name": "@kvaster/zwavejs-prom",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "zwavejs2mqtt plugin for prometheus metrics",
   "main": "index.js",
   "scripts": {
